@@ -1,0 +1,537 @@
+JFDML JFormDesigner: "5.2.4.0.321" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {seq t {space :0:0:x, comp panel1:::p::p}}"
+		} ) {
+			name: "this"
+			"title": "砺志学校后台数据系统"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "D:\\Users\\Feng\\eclipseworkspace\\SchoolDataManager\\src\\main\\java\\lizhi\\settings_1351px_1202476_easyicon.net.png" )
+			"$sizePolicy": 1
+			"$locationPolicy": 1
+			"minimumSize": new java.awt.Dimension( 980, 450 )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosed", "thisWindowClosed", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, comp lihzidata::l::1012:x, space :::p}}"
+				"$verticalGroup": "par l {seq {space :::p, comp lihzidata:::p::p, space :::p}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "lihzidata"
+					"minimumSize": new java.awt.Dimension( 980, 450 )
+					"maximumSize": new java.awt.Dimension( 980, 450 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, par l {seq l {comp txtSearchStr:::p:137:p, space :::p, comp searchName:::::x, space :::p, comp txtSerchVal:::p:59:p, space :::p, comp btnSearchByVal:::p::p}, par l:l::p {seq l {comp defaultValueeSaveToDatabase:::p:227:p, space s:::p, comp btnLoadFromDatabase:::::x}, comp scrollPane2::l:p:344:p, seq l {comp label1:::p::p, space :::p, comp txtActionName:::p:139:p, space :::p, comp label2:::p::p, space u:::p, comp txtValue:::p:33:p, space :::p, comp addToMap:::p::p}}}, space u:::p, par l {comp scrollPane1:::p:407:p, seq {comp textField3:::p:270:p, space :::p, comp LoadFromFile:::p:108:p}, seq {comp txtFilename:::p:275:p, space :::p, comp saveToFile:::p::p}}, space :p:483:p}}"
+						"$verticalGroup": "par l {seq t {space s:::p, par l {par b {comp txtActionName::b:p::p, comp label2::b:p::p, comp label1::b:p::p, comp txtValue::b:p::p, comp addToMap::b:p::p}, par l:t {comp LoadFromFile:::p::p, comp textField3:::p::p}}, space s:::p, par l {seq {par b {comp txtSearchStr::b:p::p, comp searchName::b:p::p, comp txtSerchVal::b:p::p, comp btnSearchByVal::b:p::p}, space s:::p, comp scrollPane2:::p:221:p, space u:::p, par b {comp defaultValueeSaveToDatabase::b:p::p, comp btnLoadFromDatabase::b:p::p}, space :0:151:x}, comp scrollPane1::::448:x}, space :::p, par b {comp txtFilename::b:p::p, comp saveToFile::b:p::p}, space :p:10:p}}"
+					} ) {
+						name: "DefaultValues"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "actionName"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtActionName"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "defaultValue"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtValue"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "addToMap"
+							"text": "addToMap"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addToMapMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtFilename"
+							"text": "D:\\1boteteam\\product\\GrowUp\\defaultValue.json"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "saveToFile"
+							"text": "SaveToFile"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "saveToFileMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "LoadFromFile"
+							"text": "LoadFromFile"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "LoadFromFileMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtSearchStr"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "searchName"
+							"text": "SearchByName"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "searchNameMouseClicked", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane2"
+							add( new FormComponent( "javax.swing.JTextArea" ) {
+								name: "txtSearchresult"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField3"
+							"text": "D:\\1boteteam\\product\\GrowUp\\defaultValue.json"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtSerchVal"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnSearchByVal"
+							"text": "SearchByVal"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnSearchByValMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "defaultValueeSaveToDatabase"
+							"text": "SaveToDatabase"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "defaultValuesFromDatabaseMouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "defaultValueeSaveToDatabaseMouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "defaultValueeSaveToDatabaseMouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "defaultValueeSaveToDatabaseMouseClicked", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane1"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "actionList"
+								addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "actionListValueChanged", true ) )
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnLoadFromDatabase"
+							"text": "LoadFromDatabase"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLoadFromDatabaseActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "DefaultValues"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:34:p, par l {seq l {par l:::p {comp RandName:::::x, comp label5:::p:48:p}, space :p:12:p, par l {seq l {comp txtRankName:::p:119:p, space :::p, comp label3:::p::p, space :::p, comp txtdoorscore:::p:103:p, space :p:24:p, comp label4:::p::p}, comp txtlevel:::p:68:p}, space u:::p, par l {seq l {comp txthighestscore:::p:106:p, space :p:14:p}, seq t {comp AddToRanks:::p:106:p, space u:::p}}}, seq t {par t {comp RanksSaveToDatabase:::p:144:p, comp RanksLoadFromFile:::p::p}, space s:::p}}, comp scrollPane5:::p:218:p, space ::209:x}}"
+						"$verticalGroup": "par l {seq l {space :p:32:p, par l {comp scrollPane5:::p:299:p, seq l {par b {comp RandName::b:p::p, comp label3::b:p::p, comp label4::b:p::p, comp txtdoorscore::b:p::p, comp txthighestscore::b:p::p, comp txtRankName::b:p::p}, space :::p, par l {par b:l {comp txtlevel::b:p::p, comp label5::b:p::p}, comp AddToRanks::l:p::p}, space :p:56:p, comp RanksLoadFromFile:::p::p, space :p:42:p, comp RanksSaveToDatabase:::p::p}}, space ::203:x}}"
+					} ) {
+						name: "Ranks"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane5"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "ranklist"
+								addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "ranklistValueChanged", true ) )
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtRankName"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "RandName"
+							"text": "级别名称"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "门槛分数"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtdoorscore"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "最高分数"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txthighestscore"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "级别数"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtlevel"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "AddToRanks"
+							"text": "AddToRanks"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "AddToRanksMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "RanksLoadFromFile"
+							"text": "LoadFromDataBase"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "RanksLoadFromFileMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "RanksSaveToDatabase"
+							"text": "SaveToDataBase"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "RanksSaveToFileMouseClicked", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Ranks"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :p:10:p, par l {seq {space :p:766:p, comp label18:::p::p}, seq l {comp scrollPane3:::p:424:p, space :::p, comp LoadStus:::p::p, space :::p, comp scrollPane4:::p:388:p, space :::p, comp LoadTeas:::p::p}, seq {par l {seq l {comp stuGradeClass:::p:106:p, space u:::p, comp stuTSc:::p:90:p, space :::p, par t:::p {seq {comp label14:::p::p, space :::x, comp label15:::p::p}, seq {comp rankName:::p:103:p, space u:::p, comp ranklevel:::p:47:p}, comp rankAdjust::l:p::p}}, seq {par l {seq l {comp stuName:::p:120:p, space :::p, comp stuPwd:::p:110:p, space :::p, par l {comp label8:::p::p, comp stuPhone:::p:137:p}}, seq t {par l {comp label6::l:p::p, par l {seq l {space :p:130:p, comp label7:::p::p}, seq t {space :p:118:p, comp label13:::p::p}}, comp label12::l:p:72:p}, space :p:231:p}}, par l {comp stuQq:::p:111:p, comp label16:::p::p}}, comp addStu::t:p:114:p}, par l {seq {space :p:7:p, comp separator1:::p::p, space :p:9:p, par l:::p {seq {par l {comp teaName:::p:83:p, comp label17:::p::p}, space s:::p, par l {comp teaPhone:::p:102:p, comp label19:::p::p}, space :p:37:p}, seq {par l {comp teaTid::l:p:122:p, comp label10::l:p::p}, space u:::p, par l {comp label11:::p::p, seq t {par t {seq {space :0:0:x, comp addDuty:::p:88:p}, comp teaDuty:::::x}, space :p:18:p}}}}, par l {comp teaPwd:::p:161:p, comp scrollPane6::l:p:195:p}, space :p:213:p}, seq t {space :::p, comp addTea:::p:109:p, space :p:166:p}}}}}}"
+						"$verticalGroup": "par l {seq t {space u:::p, par l {seq {par t {par b {comp label6::b:p::p, comp label7::b:p::p, comp label8::b:p::p, comp label16::b:p::p}, par b:l {comp label17::b:p::p, comp label18::b:p::p, comp label19::b:p::p}}, space :p:1:p, par b {comp stuName::b:p::p, comp stuPwd::b:p::p, comp stuPhone::b:p::p, comp stuQq::b:p::p, comp teaName::b:p::p, comp teaPhone::b:p::p, comp teaPwd::b:p::p}, space :p:13:p, par t {par l {par b {comp label12::b:p::p, comp label13::b:p::p, comp label14::b:p::p, comp label15::b:p::p}, comp label10::t:p::p}, comp label11:::p::p}, par l:::p {seq l {space u:::p, comp stuGradeClass:::p::p}, seq l {space s:::p, par b {comp stuTSc::b:p::p, comp rankName::b:p::p, comp ranklevel::b:p::p, comp teaTid::b:p::p, comp teaDuty::b:p::p}, par l {seq {space :::x, comp addDuty:::p::p, space :p:12:p}, seq l {space u:::p, comp rankAdjust:::p::p}}}, seq l {space :p:18:p, comp scrollPane6:::p:93:p}}}, comp separator1:::p:130:p}, par b {comp addStu::b:p:68:p, comp addTea::b:p:68:p}, space :p:33:p, par l {comp scrollPane3::l::245:x, comp scrollPane4::::245:x, seq {par l {comp LoadTeas:::p::p, comp LoadStus:::p::p}, space :0:222:x}}, space :::p}}"
+					} ) {
+						name: "People"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+						addEvent( new FormEvent( "java.awt.event.ComponentListener", "componentShown", "PeopleComponentShown", true ) )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane3"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "tabStus"
+								addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "tabStusPropertyChange", true, "selectedRow" ) )
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "addTea"
+							"text": "AddTea"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addTeaMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "LoadStus"
+							"text": "LoadStus"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "LoadStusMouseClicked", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "LoadStusMouseClicked", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane4"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "tabTeas"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "LoadTeas"
+							"text": "LoadTeas"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "LoadTeasActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "stuName"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label6"
+							"text": "姓名"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "密码"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "stuPwd"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label8"
+							"text": "电话"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "stuPhone"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "teaTid"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "addStu"
+							"text": "AddStu"
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addStuMouseClicked", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "教师工号"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label11"
+							"text": "职务"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "teaDuty"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane6"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "dutylist"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "addDuty"
+							"text": "增加职务>>"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label12"
+							"text": "班级"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "stuGradeClass"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "stuGradeClassActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label13"
+							"text": "总积分"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "stuTSc"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label14"
+							"text": "当前等级名称"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label15"
+							"text": "等级级数"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "rankName"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "ranklevel"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "rankAdjust"
+							"text": "等级自动校准"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "teaPhone"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label16"
+							"text": "QQ"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label17"
+							"text": "教师姓名"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "teaName"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "stuQq"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label18"
+							"text": "教师密码"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label19"
+							"text": "教师电话"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "teaPwd"
+						} )
+						add( new FormComponent( "javax.swing.JSeparator" ) {
+							name: "separator1"
+							"orientation": 1
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "People"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, par t {comp txtGradeClass:::p:175:p, comp scrollPane7:::p:175:p}, space :::p, par l {comp btnAddGradeClass::l:::x, comp btnGCFromDatabase::l:::x, comp gradeClassSaveToDatabase::l:::x}, space :p:258:p, par l:::p {comp btnLoadAllStus::::120:x, comp button5::::120:x}, space s:::p, comp scrollPane8:::p:274:p, space :p:32:p}}"
+						"$verticalGroup": "par l {seq t {space :::p, par t {comp scrollPane8:::::x, seq {par b {comp txtGradeClass::b:p::p, comp btnAddGradeClass::b:::x, comp btnLoadAllStus::b:p::p}, space s:::p, par l:::p {comp scrollPane7:::p::p, seq {par l {comp btnGCFromDatabase:::p::p, comp button5:::p::p}, space :::x, comp gradeClassSaveToDatabase:::p::p}}}}, space :p:323:p}}"
+					} ) {
+						name: "Teams"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+						addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "TeamsPropertyChange", true ) )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtGradeClass"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnAddGradeClass"
+							"text": "增加修改班级"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAddGradeClassActionPerformed", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane7"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "classlist"
+								addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "classlistValueChanged", true ) )
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnGCFromDatabase"
+							"text": "LoadFromDatabase"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGCFromDatabaseActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "gradeClassSaveToDatabase"
+							"text": "SaveToDatabase"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "gradeClassSaveToDatabaseActionPerformed", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane8"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "list1"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnLoadAllStus"
+							"text": "LoadStus"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLoadAllStusActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "button5"
+							"text": "AddtoClass"
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Teams"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {space :0:1007:x}"
+						"$verticalGroup": "par l {space :0:534:x}"
+					} ) {
+						name: "Infos"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Infos"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {space :0:1007:x}"
+						"$verticalGroup": "par l {space :0:534:x}"
+					} ) {
+						name: "Actions"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Actions"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:68:p, par l:::p {comp btndaystudy:::::x, comp btndayneiwu:::::x, comp btndayweisheng:::::x, comp btndaywenming::l:::x, comp btndayjilv:::::x, comp btnweeksixiang:::::x}, space :p:41:p, comp scrollPane9:::p:568:p, space ::225:x}}"
+						"$verticalGroup": "par l {seq l {space :p:38:p, par l {comp scrollPane9:::p:277:p, seq {comp btndaystudy:::p::p, space s:::p, comp btndayneiwu:::p::p, space s:::p, comp btndayweisheng:::p::p, space s:::p, comp btndaywenming:::p::p, space s:::p, comp btndayjilv:::p::p, space s:::p, comp btnweeksixiang:::p::p}}, space ::219:x}}"
+					} ) {
+						name: "CommonDayActions"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+						addEvent( new FormEvent( "java.awt.event.ComponentListener", "componentShown", "CommonDayActionsComponentShown", true ) )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btndaystudy"
+							"text": "学习标兵"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btndaystudyActionPerformed", true ) )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btndaystudyActionPerformed", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane9"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "daylist"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btndayneiwu"
+							"text": "内务标兵"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btndayneiwuActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btndayweisheng"
+							"text": "卫生标兵"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btndayweishengActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btndaywenming"
+							"text": "文明标兵"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btndaywenmingActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btndayjilv"
+							"text": "纪律标兵"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btndayjilvActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnweeksixiang"
+							"text": "思想进步标兵"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnweeksixiangActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "CommonDayActions"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {space :0:1007:x}"
+						"$verticalGroup": "par l {space :0:534:x}"
+					} ) {
+						name: "Photos"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Photos"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:29:p, comp scrollPane10:::p:334:p, space :p:60:p, par l {par l:::p {comp label9:::p::p, comp label20:::p::p, comp txtSubjectName::l:::x, comp scrollPane11::l:::x, comp label21::l:p::p, comp label22:::p::p, seq l {comp txtSubStartTime:::p:142:p, space :p:40:p, par l:::p {comp txtSubEndTime::::147:x, comp label23:::p::p, comp btnSubDel::l::147:x}}}, comp btnAddSubjects:::p:142:p}, space ::255:x}}"
+						"$verticalGroup": "par l {seq {par l {seq l {space :p:25:p, comp scrollPane10:::p:482:p}, seq l {space :p:24:p, comp label9:::p::p, space :::p, comp txtSubjectName:::p::p, space s:::p, comp label20:::p::p, space s:::p, comp scrollPane11:::p:132:p, space :p:28:p, comp label21:::p::p, space s:::p, par b {comp label22::b:p::p, comp label23::b:p::p}, space s:::p, par b {comp txtSubStartTime::b:p::p, comp txtSubEndTime::b:p::p}, space s:::p, par b {comp btnAddSubjects::b:p::p, comp btnSubDel::b:p::p}}}, space ::27:x}}"
+					} ) {
+						name: "subjects"
+						addEvent( new FormEvent( "java.awt.event.ComponentListener", "componentShown", "subjectsComponentShown", true ) )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane10"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "listSubjects"
+								addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "listSubjectsValueChanged", true ) )
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtSubjectName"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "名称"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label20"
+							"text": "专题简介"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label21"
+							"text": "专题时间"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtSubStartTime"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label22"
+							"text": "开始时间"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label23"
+							"text": "结束时间"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtSubEndTime"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane11"
+							add( new FormComponent( "javax.swing.JTextArea" ) {
+								name: "txtSubjectInfo"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnAddSubjects"
+							"text": "增加"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAddSubjectsActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnSubDel"
+							"text": "删除"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSubDelActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "专题"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {space :0:1007:x}"
+						"$verticalGroup": "par l {space :0:534:x}"
+					} ) {
+						name: "Analysis"
+						"minimumSize": new java.awt.Dimension( 980, 450 )
+						"maximumSize": new java.awt.Dimension( 980, 450 )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Analysis"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1040, 600 )
+		} )
+	}
+}
