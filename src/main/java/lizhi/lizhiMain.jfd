@@ -15,8 +15,8 @@ new FormModel {
 			"minimumSize": new java.awt.Dimension( 980, 450 )
 			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosed", "thisWindowClosed", true ) )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {seq {space :::p, comp lihzidata::l::1012:x, space :::p}}"
-				"$verticalGroup": "par l {seq {space :::p, comp lihzidata:::p::p, space :::p}}"
+				"$horizontalGroup": "par l {comp lihzidata::l::1024:x}"
+				"$verticalGroup": "par l {seq l {comp lihzidata:::p::p, space :0:12:x}}"
 			} ) {
 				name: "panel1"
 				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {

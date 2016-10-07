@@ -169,7 +169,8 @@ public class lizhiMain extends JFrame {
     private void LoadStusMouseClicked(MouseEvent e) {
         // TODO add your code here
         stus=mdb.getStus();
-
+        Student stu =stus.get(0);
+        UUID newid=stu.get_id();
         tabStus.setModel(new StuTableModel(stus));
 
     }
@@ -1700,17 +1701,13 @@ public class lizhiMain extends JFrame {
             panel1.setLayout(panel1Layout);
             panel1Layout.setHorizontalGroup(
                 panel1Layout.createParallelGroup()
-                    .addGroup(panel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lihzidata, GroupLayout.DEFAULT_SIZE, 1012, Short.MAX_VALUE)
-                        .addContainerGap())
+                    .addComponent(lihzidata, GroupLayout.DEFAULT_SIZE, 1024, Short.MAX_VALUE)
             );
             panel1Layout.setVerticalGroup(
                 panel1Layout.createParallelGroup()
                     .addGroup(panel1Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addComponent(lihzidata, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
+                        .addGap(0, 12, Short.MAX_VALUE))
             );
         }
 

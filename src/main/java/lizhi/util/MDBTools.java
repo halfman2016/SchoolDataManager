@@ -30,7 +30,7 @@ import java.util.Map;
  * Created by Feng on 2016/7/17.
  */
 public class MDBTools {
-    private static final MongoClient mongoClient = new MongoClient("boteteam.com", 27017);
+    private static final MongoClient mongoClient = new MongoClient("114.215.124.13", 27017);
     private MongoDatabase mongoDatabase;
     private MongoCollection<Document> mongoCollection = null;
 
